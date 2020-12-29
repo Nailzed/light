@@ -15,22 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFK-vG-K1e">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <connections>
-                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ahr-AS-tlN"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="iFK-vG-K1e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4cR-Yj-ijO"/>
-                            <constraint firstItem="iFK-vG-K1e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Yh-3j-2z6"/>
-                            <constraint firstItem="iFK-vG-K1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MUP-8L-gvF"/>
-                            <constraint firstItem="iFK-vG-K1e" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="X8p-xh-acw"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

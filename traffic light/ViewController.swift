@@ -27,9 +27,10 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func buttonPressed() {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         isLightOn.toggle()
-        updateUI()
+                updateUI()
     }
+
 }
 
