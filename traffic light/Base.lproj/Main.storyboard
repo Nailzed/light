@@ -11,17 +11,52 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="traffic_light" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="traffic_light" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xqK-58-Efe" appends="YES" id="SXK-Pz-TEm"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="Vhh-CG-heC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="xqK-58-Efe">
+                    <connections>
+                        <segue destination="A9h-38-efv" kind="show" id="1P8-hU-D11"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="75.669642857142847"/>
+            <point key="canvasLocation" x="-542" y="93"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="g3q-uj-tB3">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="A9h-38-efv" customClass="ViewController2" customModule="traffic_light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nO0-iy-g64">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="33j-MX-2xh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fSN-AN-kgd" appends="YES" id="0rW-bJ-eAk"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="2zE-ao-MlD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RpH-6w-F9E" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="fSN-AN-kgd">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="pA5-yv-9vb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="214" y="92"/>
         </scene>
     </scenes>
     <resources>
