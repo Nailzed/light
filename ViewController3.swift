@@ -12,6 +12,7 @@ class ViewController3: UIViewController {
     
     override var prefersStatusBarHidden: Bool {
         return true
+        //убираем статус бар
         }
     
     override func viewDidLoad() {
@@ -20,7 +21,7 @@ class ViewController3: UIViewController {
     }
     
     var isFlashOn: Bool = false
-    
+        //переменная управления состоянием фонарика
     func toggleFlash(on: Bool ) {
         guard let device = AVCaptureDevice.default(for: .video), device.hasTorch else { return }
         
@@ -37,14 +38,18 @@ class ViewController3: UIViewController {
             print("Error: \(error)")
         }
     }
+            //функция инициализации фонарика
+    
     func flashCondition(){
         if isFlashOn == true {toggleFlash(on: true)}
         else {toggleFlash(on: false)}
     }
 
+            //функция управления фонариком
+    
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
             isFlashOn.toggle()
             flashCondition()
         }
     }
-
+            //функция отслеживания нажатий с логикой управления фонариком
