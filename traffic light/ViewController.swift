@@ -10,10 +10,11 @@ import UIKit
 class ViewController: UIViewController {
     
     var changeColor = 1
-    
+        // переменная для учета состояния цвета
     
     override var prefersStatusBarHidden: Bool {
         return true
+        // убираем статус бар
     }
 
     override func viewDidLoad() {
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
             view.backgroundColor = .white
         }
     }
-    
+        //функция изменения цвета относительно состояния переменной
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -45,3 +46,4 @@ class ViewController: UIViewController {
     }
 
 }
+        //функция отслеживания нажатий с логикой управления цветом
